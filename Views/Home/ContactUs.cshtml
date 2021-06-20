@@ -1,0 +1,45 @@
+@model Message
+
+<div class="contact-wrapper">
+    <div class="contact-us">
+        <div class="c-title">
+            <h4 class="display-4 ">Contact Us</h4>
+        </div>
+        <div class="contact-form">
+            <form class="form-group form-length p-3" asp-action="contact_us" asp-controller="Home" method="post">
+                <span asp-validation-for="FullName"></span>
+                <label asp-for="FullName"></label>
+                <input class="form-control" asp-for="FullName">
+
+                <span asp-validation-for="Email"></span>
+                <label asp-for="Email"></label>
+                <input class="form-control" asp-for="Email">
+
+                <span asp-validation-for="VisitorMessage"></span>
+                <label asp-for="VisitorMessage"></label>
+                <textarea class="form-control" rows="6" asp-for="VisitorMessage"></textarea>
+
+                <button class="btn btn-dark btn-lg btn-block mt-3" type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    <div class="map-background">
+        <img class="half-img" src="https://www.tripsavvy.com/thmb/1OWt6nE-xYX5v9CkEkHSbL4cRCg=/882x766/filters:fill(auto,1)/Google-Maps-5--58e4125e5f9b58ef7e4c582d.png" alt="Map">
+        <div class="info-card card mb-3" style="max-width: 28rem;">
+            <h4 class="text-center light-font">Contact Details</h4>
+            <div class="card-footer bg-transparent border-light">
+                <img class="icon" src="../Image/Icons/addr.png" alt="Address Icon">
+                Address - 1335 162nd Ln NE Bellevue, WA 98008</div>
+            <div class="card-footer bg-transparent border-light">
+                <img class="icon" src="../Image/Icons/man.png" alt="Address Icon">
+                Contact Name - Worku Mulat</div>
+            <div class="card-footer bg-transparent border-light">
+                <img class="icon" src="../Image/Icons/mail.png" alt="Address Icon">
+                Email - Worku@Errica.org</div>
+            <div class="card-footer bg-transparent border-light">
+                <img class="icon" src="../Image/Icons/phone.png" alt="Address Icon">
+                Phone Number - (214)229-5479</div>
+        
+        </div>
+    </div>
+</div>

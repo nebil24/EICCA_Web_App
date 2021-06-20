@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - NPO</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"
+              crossorigin="anonymous"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"/>
+    </environment>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        @* <div class="container-fluid"> *@
+            <div class="logodiv container" style="width: 11vw; height: 12vw; background-color: #f8f8f8; opacity: 0.9; position: absolute; z-index:1; margin-left:16%">
+                    <a style="text-decoration:none;" class="navbar-bran text-light ml-4" asp-area="" asp-controller="Home" asp-action="Index"><img class="img-fluid p-2" style="width:7vw;" src="../Image/logoschool.jpg" alt="Logo">
+                    <h6 class="pl-2 text-center mainColor" style="font-size: 1.2vw; ">WORREILU HIGH SCHOOL</h6>
+                    </a>
+            </div>
+            <nav class="navbar navbar-expand-sm scrolling-navbar navbar-light" style="background-color: #343f64;">
+                <div class="container pt-2 pb-2" style="margin-left: 26%" >
+                    <div class="dropdown navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                        <ul class="navbar-nav nav-text flex-grow-1">
+                            <li class="nav-item mr-4">
+                                <a class="nav-link nav-color text-light font-weight-light " asp-area="" asp-controller="Home" asp-action="Index">HOME</a>
+                            </li>
+                            <li class="nav-item mr-4">
+                                <a class="nav-link text-light font-weight-light " asp-area="" asp-controller="Home" asp-action="OurSchool">OUR SCHOOL</a>
+                            </li>
+                            <li class="nav-item mr-4">
+                                <a class="nav-link text-light font-weight-light" asp-area="" asp-controller="Home" asp-action="Index">ACADEMICS</a>
+                            </li>
+                            <li class="nav-item mr-4">
+                                <a class="nav-link text-light font-weight-light" asp-area="" asp-controller="Home" asp-action="Mission">ADMISSIONS</a>
+                            </li>
+                            <li class="nav-item mr-4">
+                                <a class="nav-link text-light font-weight-light " asp-area="" asp-controller="Home" asp-action="Privacy">EVENTS & NEWS</a>
+                            </li>
+                            <li class="nav-item mr-4">
+                                <a class="nav-link text-light font-weight-light " asp-area="" asp-controller="Home" asp-action="Privacy">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        @* </div> *@
+    </header>
+    <div class="">
+        <main role="main" class="">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted" style= "background-color: #343f64;">
+        <div class="container p-5">
+            <div class="d-inline-block socialMedia ml-5 text-center" style="width:30%;">
+                <h6 class="text-light">Social Media</h6>
+                <p class="border-right pl-4 pr-4 font-weight-light" style="color:#f1f1f1; font-size: 13px;">&copy; 2023 By Worrilu High School <br> All rights reserved</p>
+            </div>
+            <div class="d-inline-block contactUs text-center" style="width:30%;">
+                <h6 class="text-light">Contact Us</h6>
+                <p class="border-right pl-3 pr-4 mr-4 font-weight-light" style="color:#f1f1f1; font-size: 13px;">Phone: 214-535-3346 <br> Email: Admin@WHS.edu</p>
+                <p></p>
+            </div>
+            <div class="d-inline-block Address text-center" style="width:15%;">
+                <h6 class="text-light">Address</h6>
+                <p class="font-weight-light" style="color:#f1f1f1; font-size: 13px;">500 Terry Francois Street
+                    San Francisco, CA 94158</p>
+            </div>
+            
+        </div>
+    </footer>
+
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o">
+        </script>
+    </environment>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

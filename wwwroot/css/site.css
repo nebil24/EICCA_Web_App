@@ -1,0 +1,290 @@
+﻿
+/* HEADER NAV BAR */
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+.navbar-bg{
+  background-color:rgba(248, 248, 248, 0);
+  transition: 1s ease-out 0s;
+  
+}
+.navbar-bg.solid {
+  background-color: rgb(255, 255, 255);
+  transition: 1s ease 0s;
+  color: #f1f1f1;
+  box-shadow: 0 0 15px rgb(146, 145, 145);
+  padding-bottom: 25px;
+}
+.btn-link{
+  color: rgb(0, 0, 0, 0.7);
+}
+.dropdown-menu:hover{
+  background-color: rgba(254, 255, 255, 0.6);
+}
+.nav-text{
+  color: whitesmoke;
+}
+/* HOME PAGE VG - Landing Page */
+/* .video-container-div{
+  width: 100%;
+  height: 780px;
+  background-image: url("../Image/landscape.jpg");
+  background-size: cover;
+
+} */
+#videoBG{
+  position: relative;
+  z-index: -1;
+}
+@media (min-aspect-ratio: 16/9) {
+  #videoBG{
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  #videoBG{
+    width:100%;
+    height: auto;
+  }
+}
+.content {
+  position: absolute;
+  /* right: 20px; */
+  top: 180px;
+  text-align: center;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 40%;
+  max-height: 10%;
+  padding: 20px;
+}
+/* .calltoaction{
+  width: 50%;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  top: 350px;
+  right: 0;
+  z-index: 0;
+} */
+/* .homeContainer{
+  width: 100%;
+  height: 1000px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+  background-image: linear-gradient( rgba(255, 255, 255), rgb(0, 0, 0, 0.3)30%), url("../Image/lake.jpg");
+
+} */
+
+/* SECTION 1 - TITLE & MISSION */
+
+.mainColor{
+  color: #343f64;
+}
+.welcomeCard1{
+  width: 40%;
+  background-color: white;
+  display: inline-block;
+  color: #343f64;
+ 
+}
+.welcomeCard2{
+  width: 40%;
+  background-color: #343f64;
+  display: inline-block;
+  color: white;
+ 
+}
+.btn{
+  color: #e9db89;
+}
+.title{
+  height: 600px;
+  margin-top: 100px;
+  margin-bottom: 200px;
+  padding:50px;
+}
+.org-title{
+  color:black;
+  
+}
+.mission-statement{
+  width: 90%;
+  height: auto;
+
+}
+.mission-content{
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  width:40%;
+  height: 450px;
+  font-weight: 300;
+}
+.church-img{
+  width: 500px;
+  height: 450px;
+  margin-right: 40px;
+
+}
+/* SECTION 2 - NEWS */
+.inline-cards{
+  transition: all .2s ease-in-out;
+  margin: 25px;
+}
+.card-grow:hover{
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.card-group{
+  width: 90%;
+  margin: 0px auto;
+}
+.newsContainer{
+  margin-bottom: 150px;
+}
+
+/* SECTION 3 - CLIMATE CHANGE INFO */
+
+.featured-card{
+  height: 350px;
+}
+.featured-body{
+  height:200px;
+}
+.CCinAfrica{
+  width: 90%;
+  margin: 0px auto;
+}
+
+.display-4{
+  font-size: 50px;
+}
+#quote{
+  font-size:35px;
+}
+/* CONTACT PAGE */
+.contact-us{
+  margin-left:60px;
+  margin-top: 30px;
+  width:45%;
+  display: inline-block;
+
+}
+.form-control{
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(148, 143, 143);
+  border-radius: 0;
+  outline-color: 0;
+  box-shadow:none;
+}
+label{
+  opacity: 0.5;
+}
+.form-control:focus{
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+input{
+  border: 0;
+  outline: 0;
+  background: black;
+  border-bottom: 1px solid black;
+}
+textarea{
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+}
+.c-title{
+  position: static;
+  margin-top: 6%;
+}
+.form-length{
+  width:500px;
+}
+.info-card{
+  margin-top: -450px;
+  background: transparent;
+  margin-left: 130px;
+  backdrop-filter: blur(0.25rem);
+  box-shadow: 1px black;
+}
+.map-background{
+  width:705px;
+  height: 400px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 60px;
+}
+.light-font{
+  padding: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.half-img{
+  width: 100%;
+  height: 520px;
+  overflow: hidden;
+  opacity: 0.4;
+}
+.icon{
+  width:30px;
+  height: auto;
+}
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+nav .navbar-nav li a:hover{
+  color: #e9db89 !important;
+}
+nav .navbar-nav li a:active{
+  color: #e9db89;
+}
+/* .nav-color:hover{
+  color:  !important;
+} */
+.footer {
+  width: 100%;
+  
+}
+/* Universal Several */
+ 
